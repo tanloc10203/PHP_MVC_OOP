@@ -1,0 +1,14 @@
+{
+  "name": "ginga/mvc_application",
+  "authors": [
+    {
+      "name": "Phan Tan Loc"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  },
+  "require": {}
+}
