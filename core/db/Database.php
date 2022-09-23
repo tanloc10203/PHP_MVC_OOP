@@ -1,6 +1,8 @@
 <?php
 
-namespace app\core;
+namespace app\core\db;
+
+use app\core\Application;
 
 class Database
 {
@@ -78,5 +80,10 @@ class Database
   public function log($message)
   {
     echo '[' . date('Y-m-d H:i:s') . '] - ' . $message . PHP_EOL;
+  }
+
+  public function prepare($sql)
+  {
+    return $this->pdo->prepare($sql);
   }
 }
